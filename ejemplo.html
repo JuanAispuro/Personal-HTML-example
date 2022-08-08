@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Video Sobre HTML</title>
+    <!-- CSS -->
+    <style>
+        table, th, td {           
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Tablas -->
+<table style="width: 500px;">
+    <!-- Columnas (Th)-->
+   <thead>
+    <tr>
+        <th>Producto</th>
+        <th>Precio</th>
+    </tr>
+   </thead>
+    <!-- las de adentro-->
+   <tbody>
+    <tr>
+        <!--Filas (Td)-->
+        <td>Hola Claneros</td>
+        <td>Gratis</td>
+      <tr>
+            <!--Filas (Td)-->
+            <td>Chanchito feliz</td>
+            <td>19.90$</td>
+            
+        </tr>
+        <tr>
+            <!--Filas (Td)-->
+            <td>Hola Claneros como estamos</td>
+            <td>29.99$</td>
+        
+        </tr>
+    </tr>
+   </tbody>
+
+   <tfoot>
+        <td></td>
+        <td> Total: 49.80$</td>
+   </tfoot>
+</table>
+
+<br><br>
+<!-- LISTAS -->
+    <!-- (UL) es lista no ordenada, los cuales apareceran con boton negro.--> 
+    <Ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+    <!-- Para enumerarlo es con la etiqueta de (ol)-->
+    <ol>
+        <li value="50">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    <li>
+        <ol>
+            <!-- para poder poner letras -->
+            <li style="list-style-type: lower-alpha;">sub elemento 4.1</li>
+            <li style="list-style-type: lower-roman;">sub elemento 4.2</li>
+            <li style="list-style-type: lower-alpha;">sub elemento 4.3</li>
+        </ol>
+    </li>
+    </ol>
+
+<br><br>
+
+<!-- Formularios-->
+    <!-- (get) usando url -->
+    <!-- (post) -->
+     <form action="/formulario." method="post">
+        <!--Etiquetas -->
+        <label for="nombre">Nombre</label>
+        <!-- nombre es el valor que se le asignara al id nombre.-->
+        <!--Placeholder es la propiedad de que es lo que tiene que ir alli-->
+        <!--types importantes email, checkbox, file, radio  y passwoord.-->
+        <!--Valores por defecto (Value), textarea no la usa.-->
+
+        <input value ="Chanchito" type="text" id="nombre" name="Nombre" placeholder="Nombre"/>
+
+        <br>
+        <label for="apellido">Apellido</label>
+        <input value="Feliz" type="text" id="apellido" name="Apellido" placeholder="Apellido"/>
+        <br>
+        <!-- Se utiliza para textarea las acciones de (cols) para columnas y (rows) filas -->
+        <label for="comentario">Comentario</label>
+        <br>
+        <textarea id="comentario"placeholder="ingrese un comentario" name="comentario"> Este es un valor por defecto.</textarea>
+        <br>
+        <!-- para subirlo al servidor y especificar donde se iran, mediante form en action.-->
+        <!--< input type="submit"/> -->
+
+     <!--Botones-->        
+    <br>
+    <!--button, reset o submit los tipos de botones.-->
+    <button type="button">Tipo boton</button>
+    <button type="reset">Tipo reset</button>
+    <button type="submit">Tipo submit</button>
+
+
+    </form>
+
+    <!-- (h1) es para el heading de la pagina.-->
+    <h1>Mi primer heading</h1>
+    <h2>Mi segundo heading</h1>
+    <h3>Mi tercero heading</h1>
+    <h4>Mi cuarto heading</h1>
+
+    <p> Parrafo.</p>
+    <!-- Con esta linea haces una division-->
+    <hr>
+
+    <!-- (p) es para el texto.-->
+    <p>Texto extra en el cual vamos a referenciar
+        <!--style para seleccionar de un color en especifico.-->
+        <span style="color: blue"> hola me llamo juan </span>
+        <br><br> y esto baja.
+    </p>
+
+    <!-- (A) etiquta para movernos hacia otro link y con la misma pagina-->
+
+    <a href="https://www.youtube.com/watch?v=wAMZ6KpMGQI&ab_channel=ZarcortGame">Ir a lo mejor</a>
+
+      <br>
+        <!-- (A) etiquta para movernos hacia otro link y con la misma pagina-->
+      
+     <a target="_blank" href="https://www.youtube.com/watch?v=wAMZ6KpMGQI&ab_channel=ZarcortGame">Ir a lo mejor pero en otra pagina.</a>
+
+<!-- Seccion de imagenes.-->
+        <!-- Insertar imaganes que esten en otra carpeta que la pagina.-->
+     <img src="Carpeta Imagenes/Goku.jpg" height="300" />
+
+
+
+</body>
+</html>
