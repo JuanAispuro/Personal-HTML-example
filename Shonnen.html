@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verdad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleS.css">
+
+</head>
+<body>
+    <!-- (header) sirve para agrupar.-->
+    <header>
+      <!-- Titulo -->
+        <h1 id="Titulo"> Top 3 protagonistas del Shonen </h1>
+     
+    </header>
+    <div class="Textbox"> Seleccione el genero que desea</div>
+    <script src="./AppP.js"></script>
+    <form>
+      <select onchange=nav(this.value) name="combo1" class="menudespl" width=200>
+        <option></option>
+        <option value="Blog.html">Pagina inicial</option>
+        <option value="Shonnen.html"> Shonen</option>
+        <option value="Seinen.html"> Seinen </option>
+
+      </select>
+    </form>
+    <!-- Div -->
+     <body >
+      <!-- Carrusel de fotos -->
+        <div class="carrusel">
+            <div class="carrusel-items">
+              <div class="carrusel-item">
+                <img src="./ImagenesShonnen/luffy-one-piece.gif" alt="" />
+              </div>
+              <div class="carrusel-item">
+                <img src="./ImagenesShonnen/ichigo-kurosaki-4k.gif" alt="" />
+              </div>
+              <div class="carrusel-item">
+                <img src="./ImagenesShonnen/Naruto gif.gif" alt="" />
+              </div>
+              <div class="carrusel-item">
+                <img src="./ImagenesShonnen/Luffy.jpg" alt="" />
+              </div>
+              <div class="carrusel-item">
+                <img src="./ImagenesShonnen/Ichigo.jpg" alt="" />
+              </div>
+              <div class="carrusel-item">
+                <img src="./ImagenesShonnen/naruto-uzumaki.png" alt="" />
+              </div>
+              <div class="carrusel-item">
+                <img src="./ImagenesShonnen/Luffy2.jpg" alt="" />
+              </div>
+              <div class="carrusel-item">
+                <img src="./ImagenesShonnen/Ichigo2.jpg" alt="" />
+              </div>
+              <div class="carrusel-item">
+                <img src="./ImagenesShonnen/Naruto.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- Script de js para el carrusel -->
+          <script src="berserk.js" ></script>
+     </body>
+    <!-- (Section) las secciones de nuestra pagina.-->
+    <section class="rows">
+      <!-- Anuncio 1 -->
+        <article class="anuncio">
+            <img class="a1"src="./Imagenes/Anuncio1.jpg" width = "200" />
+        </article>
+        <!-- Centro del programa -->
+        <section class="container">
+            <Article class="post1">
+                <h2 id="Luffy" style="color:red"> Numero 1: Monkey D. Luffy</h2>
+                  <p> Anime: <a target="_blank" href="https://onepiece.fandom.com/es/wiki/Monkey_D._Luffy">One piece</a></p>
+                     <img id="FB" src="./ImagenesShonnen/Luffy.jpg" width="300" height="300"/>
+                     <p ALIGN="left"> <span style="color:blue" > Monkey D. Luffy  (モンキー・Ｄ・ルフィ Monkī Dī Rufi)</span>, más conocido como Luffy «Sombrero de Paja» (麦わらのルフィ Mugiwara no Rufi?), es el protagonista principal de la serie de manga y anime One Piece. 
+                        Es el capitán y fundador de los Piratas de Sombrero de Paja.
+                    <br> Cuarto miembro de los Cuatro Emperadores que gobiernan los mares del Nuevo Mundo.</p>
+                        <audio controls>
+                            <source src="./ImagenesShonnen/y2mate.com - Luffy  kaizoku ni ore wa naru  (1).mp3" type="audio/mp3">
+                        </audio>
+                </Article>
+
+            <hr>
+                <!-- Articulo 2-->
+            <Article class="post2">
+                <h2 id="Ichigo" style="color:black"> Numero 2: Kurosaki Ichigo</h2>
+                <p> Anime: <a target="_blank" href="https://bleach.fandom.com/es/wiki/Ichigo_Kurosaki"> Bleach </a></p>
+                <img src="./ImagenesShonnen/Ichigo2.jpg" width="300" height="300"/>
+                <p> <span style="color:dimgray" >Okabe Ichigo Kurosaki (黒崎 一護, Kurosaki Ichigo)</span>, es un humano que también trabaja como Shinigami Sustituto. 
+                   <br> Ichigo es el hijo de Isshin y Masaki Kurosaki, y hermano mayor de Karin y Yuzu. También está casado con Orihime Inoue y tiene un hijo llamado Kazui Kurosaki.
+                </p>
+            </Article>
+
+            <hr>
+                <!-- Articulo 3-->
+            <Article class="post3">
+                <h2 id= "Naruto" style="color:orange"> Numero 3: Uzumaki Naruto </h2>
+                <p> Anime: <a target="_blank" href= "https://es.wikipedia.org/wiki/Re:Zero_kara_Hajimeru_Isekai_Seikatsu">Naruto</a></p>
+                <img src="./ImagenesShonnen/naruto-uzumaki.png" width="300" height="300"/>
+                <p ALIGN="left"> <span style="color:orangered">TSubaru Natsuki (ナツキ・スバル Natsuki Subaru?)</span> Es un personaje ficticio de la franquicia Re:Zero kara Hajimeru Isekai Seikatsu.
+                <br>La cual es una serie de novelas ligeras escritas por Tappei Nagatsuki e ilustradas por Shin'ichirō Ōtsuka.
+                <br>Subaru es un joven hikikomori que de repente se ve transportado a otro mundo en su camino a casa desde la tienda de conveniencia.</p>
+            </Article>
+        </section>
+        <!-- Anuncio 2 -->
+        <article class="anuncio2">
+            <img class="a2"src="./Imagenes/Anuncio1.jpg" width = "200" />
+        </article>
+    </section>
+ 
+    <!-- (footer) pie de pagina.-->
+
+    <footer class="rows2">
+      <!-- Tabala de información -->
+      <section>
+        <table class="TablaInfo">
+            <tr>
+                <td><p class="Correo"><img src="./Imagenes/gmail.png" width="20"/> Gmail: <a href="mailto:Juan.aispuro72@gmail.com"> Juan.aispuro72@gmail.com</a></p></td>
+            </tr>
+
+            <tr>
+                <td><p class ="GIT"> <img src="./Imagenes/25231.png" width="20"/> Github: <a target="_blank" href="//github.com/JuanAispuro"> JuanAispuro</a></p> </td>
+            </tr>
+
+            <tr>
+                <td><p class="Facebook"><img src="./Imagenes/facebook l.png"width="20"/> Facebook: <a target="_blank" href="https://www.facebook.com/juan.aispuro.106"> Juan Aispuro</a></p>                </td>
+            </tr>
+        </table>
+    </section>
+    <!-- Enlace para ir al inicio de la página -->
+        <section class="mismapagina">
+        <Ul>
+        <li><a href="#Titulo">Ir al comienzo</a></li> <br>
+        <li><a href="#Luffy">Ir al kaisoko oni ore wa nare</a></li><br>
+        <li><a href="#Ichigo"> Ir al Bankai </a></li> <br>
+        <li><a href="#Naruto">Ir al nanadaime hokage</a></li> <br>
+        </Ul>
+       </section>
+</footer>
+</body>
+</html>

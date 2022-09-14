@@ -6,128 +6,144 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <!-- (header) sirve para agrupar.-->
     <header>
-        <h1 id="Titulo"> Top 3 protagonistas más madreados </h1>
-
+      <!-- Titulo -->
+        <h1 id="Titulo"> Top 3 diferentes protagonistas </h1>
+      <script src="https://unpkg.com/react.development.js"crossorigin></script>
+      <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"crossorigin></script>
+      <script type="module" src="./AppP.js"></script>
+       
     </header>
+    <div class="Textbox"> Seleccione el genero que desea</div>
+    <script src="./AppP.js"></script>
+    <form>
+      <select onchange=nav(this.value) name="combo1" class="menudespl" width=200>
+        <option selected value="Blog.html">Pagina inicial</option>
+        <option value="Shonnen.html"> Shonnen</option>
+
+      </select>
+    </form>
     <!-- Div -->
      <body >
+      <!-- Carrusel de fotos -->
         <div class="carrusel">
             <div class="carrusel-items">
               <div class="carrusel-item">
-                <img src="Guts.jpg" alt="" />
+                <img src="./Imagenes/Guts.jpg" alt="" />
               </div>
               <div class="carrusel-item">
-                <img src="Okarin.jpg" alt="" />
+                <img src="./Imagenes/Okarin.jpg" alt="" />
               </div>
               <div class="carrusel-item">
-                <img src="Subaru.jpg" alt="" />
+                <img src="./Imagenes/Subaru.jpg" alt="" />
               </div>
               <div class="carrusel-item">
-                <img src="Guts2.jpg" alt="" />
+                <img src="./Imagenes/Guts2.jpg" alt="" />
               </div>
               <div class="carrusel-item">
-                <img src="Okarin2.jpg" alt="" />
+                <img src="./Imagenes/Okarin2.jpg" alt="" />
               </div>
               <div class="carrusel-item">
-                <img src="Subaru2.jpg" alt="" />
+                <img src="./Imagenes/Subaru2.jpg" alt="" />
               </div>
               <div class="carrusel-item">
-                <img src="Luffy.jpg" alt="" />
+                <img src="./Imagenes/Luffy.jpg" alt="" />
               </div>
               <div class="carrusel-item">
-                <img src="Guts.jpg" alt="" />
+                <img src="./Imagenes/Guts.jpg" alt="" />
               </div>
               <div class="carrusel-item">
-                <img src="Okarin.jpg" alt="" />
+                <img src="./Imagenes/Okarin.jpg" alt="" />
               </div>
               <div class="carrusel-item">
-                <img src="Subaru.jpg" alt="" />
+                <img src="./Imagenes/Subaru.jpg" alt="" />
               </div>
               <div class="carrusel-item">
-                <img src="Guts2.jpg" alt="" />
+                <img src="./Imagenes/Guts2.jpg" alt="" />
               </div>
               <div class="carrusel-item">
-                <img src="Guts2.jpg" alt="" />
+                <img src="./Imagenes/Guts2.jpg" alt="" />
               </div>
             </div>
           </div>
+          <!-- Script de js para el carrusel -->
           <script src="berserk.js" ></script>
      </body>
     <!-- (Section) las secciones de nuestra pagina.-->
     <section class="rows">
+      <!-- Anuncio 1 -->
         <article class="anuncio">
-            <img class="a1"src="Anuncio1.jpg" width = "200" />
+            <img class="a1"src="./Imagenes/Anuncio1.jpg" width = "200" />
         </article>
+        <!-- Centro del programa -->
         <section class="container">
             <Article class="post1">
                 <h2 id="Guts" style="color:blue"> Numero 1: Guts</h2>
                   <p> Anime: <a target="_blank" href="https://berserk.fandom.com/es/wiki/Wiki_Berserk">Berserk</a></p>
-                     <img src="Guts.jpg" width="200"/>
-                     <p> <span style="color:blue" >(ガッツ Gattsu)</span>. Conocido por su epíteto del "espadachín negro" ("kuroi kenshi", "guerrero negro" en traducciones en español). 
+                     <img id="FB" src="./Imagenes/Guts.jpg" width="200"/>
+                     <p ALIGN="left"> <span style="color:blue" >(ガッツ Gattsu)</span>. Conocido por su epíteto del "espadachín negro" ("kuroi kenshi", "guerrero negro" en traducciones en español). 
                     <br>  Es el protagonista del manga y anime Berserk siendo un antiguo mercenario marcado que viaja por el mundo en una lucha interna constante entre perseguir su venganza y proteger a sus seres queridos.</p>
             </Article>
+
             <hr>
                 <!-- Articulo 2-->
             <Article class="post2">
                 <h2 id="Okarin" style="color:dimgray"> Numero 2: Okarin </h2>
                 <p> Anime: <a target="_blank" href="https://es.wikipedia.org/wiki/Steins;Gate">Steins;Gate</a></p>
-                <img src="Okarin.jpg" width="200"/>
+                <img src="./Imagenes/Okarin.jpg" width="200"/>
                 <p> <span style="color:dimgray" >Okabe (岡部倫太郁, Okabe Rintarō)</span>, alias Okarin (una contracción de Oka-, proveniente de su apellido, y Rin-, de su nombre).
                    <br> Es un autoproclamado científico loco y el protagonista de Steins;Gate.</p>
             </Article>
+
             <hr>
                 <!-- Articulo 3-->
             <Article class="post3">
                 <h2 id= "Subaru" style="color:red"> Numero 3: Subaru </h2>
                 <p> Anime: <a target="_blank" href= "https://es.wikipedia.org/wiki/Re:Zero_kara_Hajimeru_Isekai_Seikatsu">Re:Zero kara Hajimeru Isekai Seikatsu</a></p>
-                <img src="Subaru.jpg" width="200"/>
-                <p> <span style="color:red">TSubaru Natsuki (ナツキ・スバル Natsuki Subaru?)</span> Es un personaje ficticio de la franquicia Re:Zero kara Hajimeru Isekai Seikatsu.
+                <img src="./Imagenes/Subaru.jpg" width="200"/>
+                <p ALIGN="left"> <span style="color:red">TSubaru Natsuki (ナツキ・スバル Natsuki Subaru?)</span> Es un personaje ficticio de la franquicia Re:Zero kara Hajimeru Isekai Seikatsu.
                 <br>La cual es una serie de novelas ligeras escritas por Tappei Nagatsuki e ilustradas por Shin'ichirō Ōtsuka.
                 <br>Subaru es un joven hikikomori que de repente se ve transportado a otro mundo en su camino a casa desde la tienda de conveniencia.</p>
             </Article>
         </section>
+        <!-- Anuncio 2 -->
         <article class="anuncio2">
-            <img class="a2"src="Anuncio1.jpg" width = "200" />
+            <img class="a2"src="./Imagenes/Anuncio1.jpg" width = "200" />
         </article>
     </section>
  
     <!-- (footer) pie de pagina.-->
+
     <footer class="rows2">
-        <section>
+      <!-- Tabala de información -->
+      <section>
+        <table class="TablaInfo">
+            <tr>
+                <td><p class="Correo"><img src="./Imagenes/gmail.png" width="20"/> Gmail: <a href="mailto:Juan.aispuro72@gmail.com"> Juan.aispuro72@gmail.com</a></p></td>
+            </tr>
+
+            <tr>
+                <td><p class ="GIT"> <img src="./Imagenes/25231.png" width="20"/> Github: <a target="_blank" href="//github.com/JuanAispuro"> JuanAispuro</a></p> </td>
+            </tr>
+
+            <tr>
+                <td><p class="Facebook"><img src="./Imagenes/facebook l.png"width="20"/> Facebook: <a target="_blank" href="https://www.facebook.com/juan.aispuro.106"> Juan Aispuro</a></p>                </td>
+            </tr>
+        </table>
+    </section>
+    <!-- Enlace para ir al inicio de la página -->
+        <section class="mismapagina">
         <Ul>
         <li><a href="#Titulo">Ir al comienzo</a></li> <br>
         <li><a href="#Guts">Ir al besto prota</a></li><br>
         <li><a href="#Okarin"> Ir al Cientifico loco</a></li> <br>
         <li><a href="#Subaru">Ir al marca Subaru</a></li> <br>
-
         </Ul>
        </section>
-       <section2>
-        <br>
-        <br>
-        <br>
-        <section>
-        <table class="TablaInfo">
-            <tr>
-                <td><p class="Correo"><img src="gmail.png" width="20"/> Gmail: <a href="mailto:Juan.aispuro72@gmail.com"> Juan.aispuro72@gmail.com</a></p></td>
-            </tr>
-
-            <tr>
-                <td><p class ="GIT"> <img src="25231.png" width="20"/> Github: <a target="_blank" href="//github.com/JuanAispuro"> JuanAispuro</a></p> </td>
-            </tr>
-
-            <tr>
-                <td><p class="Facebook"><img src="facebook l.png"width="20"/> Facebook: <a target="_blank" href="https://www.facebook.com/juan.aispuro.106"> Juan Aispuro</a></p>                </td>
-            </tr>
-        </table>
-    </section>
-        <br>
-        <button onclick="location.href='https://c.tenor.com/_5Jd5J9n5-QAAAAC/baile-del-trolleo.gif'">Secreto</button>
-        </section2>
 </footer>
 </body>
 </html>

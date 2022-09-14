@@ -16,21 +16,43 @@ header h1{
                 /* Cuerpo */
 body{
     margin:0;
-    background-color: #efefee;
-    
+    background-color: #efefee;    
 }
-
+/* Sección de anuncios y cuerpo */
 .rows{
     display:flex;
+    width: 100%;
 }
+/* Sección de enlaces y información */
+.rows2{
+    display: flex;
+
+}
+/* Enlace para la misma pagina */
+.mismapagina{
+    width: 1000px;
+}
+
+.selector{
+    color:red;
+}
+.Cambiop{
+
+    outline: 2px solid black;
+}
+/* Anuncio 1 */
 .a1{
-    width:300px;
+    width: 200px;
     height: 100%;
+    outline: 2px solid black;
 }
+/* Anuncio 2 */
 .a2{
-    width: 300px;
+    width: 200px;
     height: 100%;
+    outline: 2px solid black;
 }
+
             /* Carrusel  */
 .carrusel-items {
     display:flex;
@@ -39,11 +61,10 @@ body{
     padding: 30px 0px;
 
 }
-
 .carrusel-item{
-    min-width:300px;
+    min-width: 300px;
     max-width: 300px;
-    height: 200px;
+    height: 150px;
     outline: 2px solid black;
     cursor:pointer;
 }
@@ -55,12 +76,23 @@ body{
 .carrusel-item:hover {
     transform:scale(1.2);
 }
-
+/* Contenedor del texto */
 .container{
     width: 400px;
     margin: 0 auto;
 }
-
+/* Imagenes del contenedor */
+.container img{
+    outline: 2px solid black;
+    object-fit: cover;
+    display:block;
+    margin:  0 auto;
+}
+/* Seleccionar el mouse en la imagen del cuerpo */
+.container img:hover{
+    transform:scale(1.2);
+}
+/* Articulos dentro de la seccion */
 section article{
     transition: all 0.3s ease;
     background-color: #fff;
@@ -69,16 +101,14 @@ section article{
     padding: 0.25rem 0;
     cursor: pointer;
 }
+/* Cuando el mouse esta sobre el articulo */
 section article:hover{
     box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3);
 }
 
-
+/* h2 y p de todas las secciones */
 section article h2, section article p{
     margin: 1rem;
-}
-.post1{
-    justify-content:center;
 }
 
 /* footer section */
@@ -87,46 +117,40 @@ footer{
     padding: 6rem;
     color:#fff;
 }
-
+/* Seccion del footer */
 footer section{
     margin: 0.25mm;
     text-align: right;
 }
-
-footer section2{
-    margin: 0.5mm;
-    text-align: left;
-    
-}
+/* Lista de footer */
 footer ul{
     float: right;
     padding-left: 44px;
 }
-
-footer GIT:hover{
-    color: blue;
-}
+/* a del footer */
 footer a{
     transition: color 0.3s ease;
     color:#fff;
     text-decoration: none;
 }
-
+/* Tabla de información */
 .TablaInfo{
     align-content: flex-start;
 }
-
+/* Facebook */
 .TablaInfo .Facebook{
 
     color:blue;
 }
+/* Github */
 .TablaInfo .GIT{
     color:grey;
 }
+/* Correo */
 .TablaInfo .Correo{
     color:red;
 }
-
+/* Seleccionamos los a */
 footer a:hover{
     color:cornflowerblue;
 }
